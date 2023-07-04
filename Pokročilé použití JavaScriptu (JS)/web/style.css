@@ -4,11 +4,6 @@
     background-color: black;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .nepravda {
     text-decoration: line-through;
@@ -39,14 +34,47 @@ div {
     margin-top: 10px;
     border-color: 1px white solid;
 }
+
+@keyframes semafor-cervena {
+    0% {background-color: black;}
+    100% {background-color: red;}
+}
+
+@keyframes semafor-zluta {
+    0% {background-color: black;}
+    100% {background-color: yellow;}
+}
+@keyframes semafor-zelena {
+    0% {background-color: black;}
+    100% {background-color: green;}
+}
 .cervena {
     background-color: red;
-
+    animation-name: semafor-cervena;
+    animation-duration: 3s;
 }
+
 .zluta {
     background-color: yellow;
+    animation-name: semafor-zluta;
+    animation-duration: 6s;
 }
 
 .zelena {
-    background-color: green;    
+    background-color: green; 
+    animation-name: semafor-zelena;
+    animation-duration: 9s;  
+}
+
+@keyframes obrazek {
+    0% {}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#obrazek {
+    animation-name: obrazek;
+    animation-duration: 10s;
 }

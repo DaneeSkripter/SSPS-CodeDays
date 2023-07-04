@@ -1,0 +1,52 @@
+.heading {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nepravda {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+button {
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.pozadi {
+    background-color: black;
+    width: 100px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+div {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-color: 1px white solid;
+}
+.cervena {
+    background-color: red;
+
+}
+.zluta {
+    background-color: yellow;
+}
+
+.zelena {
+    background-color: green;    
+}

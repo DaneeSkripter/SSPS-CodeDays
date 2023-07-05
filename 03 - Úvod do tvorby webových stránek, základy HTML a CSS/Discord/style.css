@@ -74,7 +74,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #1e1f22;
+    background-color: #2b2d31;
     align-items: center;
     border-radius: 20px;
     margin-left: 110px;
@@ -85,4 +85,76 @@ body {
     font-family: sans-serif;
     font-size: 20px;
     color: white;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto; 
 } 
+
+.channel, .category {
+    width: 280px;
+    height: 30px;
+    padding-top: 5px;
+    margin-top: 5px;
+    transition-duration: 0.4s;
+}
+
+.channel > p, .category > p {
+    font-family: sans-serif;
+    color: #80848e;
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.channel:hover{
+    background-color: #404249;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+}
+
+.category:hover > p, .category:hover > i {
+    color: white;
+}
+
+.sendmessage {
+    width: 650px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #383a40;
+    border: none;
+    margin-top: -80px;
+    margin-left: 450px;
+    display: flex;
+}
+
+.sendmessage::placeholder {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.submitbtn {
+    width: 120px;
+    height: 50px;
+    margin-top: -50px;
+    margin-left: 1120px;
+    background-color: #5865f2;
+    border: none;
+    display: flex;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif ;
+    transition-duration: 0.4s;
+}
+
+.submitbtn:hover {
+    background-color: white;
+    color: #5865f2;
+    transition-duration: 0.4s;
+    width: 125px;
+    margin-left: 1125px;
+}

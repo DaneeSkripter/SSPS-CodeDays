@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: end;
+    align-content: end;
+}
+
+.container > div {
+    background-color: red;
+    padding: 10px;
+}

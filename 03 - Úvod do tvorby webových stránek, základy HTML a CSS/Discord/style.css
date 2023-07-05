@@ -1,0 +1,88 @@
+.servers {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1f22;
+    align-items: center;
+    border-radius: 20px;
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+    background-color: #313338;
+}
+
+.server {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width:  75px;
+    height: 75px;
+    overflow: hidden;
+}
+
+.server:hover {
+    border-radius: 25px;
+}
+
+.server > img {
+    width: 75px;
+    height: 75px; 
+    transition-duration: 0.4s;
+}
+
+.server > img:hover {
+    border-radius: 25px;
+    transition-duration: 0.4s;
+    width: 90px;
+    height: 90px;
+}
+
+.servers > hr, .channels > hr{
+    width: 75%;
+    border-radius: 20px;
+    height: 5px;
+    background-color: #313338;  
+    border: none
+}
+
+
+.discord {
+    background-color: #313338;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 75px;
+    height: 75px;
+    transition-duration: 0.4s;
+}
+
+.discord:hover {
+    border-radius: 25px;
+    background-color: #5865f2;
+    transition-duration: 0.4s;
+}
+
+.channels {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1f22;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 110px;
+    margin-top: -100%;
+}
+
+.channels > h1{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+} 

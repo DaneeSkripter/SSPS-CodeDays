@@ -2,15 +2,21 @@
     width: 100px;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     background-color: #1e1f22;
     align-items: center;
     border-radius: 20px;
 }
 
+.flex-container {
+    display: flex;
+    width: 120vh;
+    height: 98vh;   
+  }
+
 body {
-    width: 100vh;
-    height: 100vh;
+    width: 120vh;
+    height: 98vh;
     background-color: #313338;
 }
 
@@ -70,15 +76,14 @@ body {
 }
 
 .channels {
-    width: 300px;
-    height: 100vh;
+    width: 280px;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     background-color: #2b2d31;
     align-items: center;
     border-radius: 20px;
-    margin-left: 110px;
-    margin-top: -100%;
+    margin-left: 20px;
 }
 
 .channels > h1{
@@ -90,11 +95,16 @@ body {
     margin-left: auto; 
 } 
 
+.channels > h1:hover {
+    text-shadow: white ;
+}
+
 .channel, .category {
-    width: 280px;
+    width: 260px;
     height: 30px;
     padding-top: 5px;
     margin-top: 5px;
+    margin-left: 10px;
     transition-duration: 0.4s;
 }
 
@@ -105,6 +115,7 @@ body {
     text-align: left;
     margin: 0;
     padding-left: 5px;
+    transition-duration: 0.4s;  
 }
 
 .channel:hover{
@@ -112,9 +123,14 @@ body {
     border-radius: 20px;
     transition-duration: 0.4s;
 }
+.server:hover > .tooltip, .discord:hover > .tooltip {
+    visibility: visible;
+}
 
 .category:hover > p, .category:hover > i {
     color: white;
+    transition-duration: 0.4s;
+    font-size: 22px;
 }
 
 .sendmessage {
@@ -123,21 +139,15 @@ body {
     border-radius: 20px;
     background-color: #383a40;
     border: none;
-    margin-top: -80px;
-    margin-left: 450px;
     display: flex;
-}
-
-.sendmessage::placeholder {
-    padding-left: 20px;
+    color: white;
     font-size: 20px;
+    padding-left: 20px;
 }
 
 .submitbtn {
     width: 120px;
     height: 50px;
-    margin-top: -50px;
-    margin-left: 1120px;
     background-color: #5865f2;
     border: none;
     display: flex;
@@ -155,6 +165,19 @@ body {
     background-color: white;
     color: #5865f2;
     transition-duration: 0.4s;
-    width: 125px;
-    margin-left: 1125px;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #1e1f22;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 200px;
+    font-family: sans-serif;
+    opacity: 0.5;
 }

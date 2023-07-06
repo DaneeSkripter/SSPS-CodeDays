@@ -77,13 +77,54 @@ body {
 
 .channels {
     width: 280px;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-flow: column wrap;
     background-color: #2b2d31;
     align-items: center;
     border-radius: 20px;
     margin-left: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.menu {
+    transition-duration: 0.4s;
+    border-radius: 20px ;
+}
+
+.login {
+    width: 280px;
+    height: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #1e1f22;
+    justify-content: flex-end;
+    border-radius: 20px;
+    margin-left: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.login > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 10px;
+}
+
+.login > .username {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 12%;
+    text-align: left;
+}
+.menu:hover {
+    box-shadow: 2px 2px 2px white;
+    transition-duration: 0.4s;
 }
 
 .channels > h1{
@@ -123,7 +164,7 @@ body {
     border-radius: 20px;
     transition-duration: 0.4s;
 }
-.server:hover > .tooltip, .discord:hover > .tooltip {
+.server:hover > .tooltip, .discord:hover > .tooltip, .login:hover > .tooltip  {
     visibility: visible;
 }
 
@@ -207,7 +248,7 @@ body {
     transition-duration: 0.4s;
 }
 
-.message > img {
+.message > img  {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -238,7 +279,12 @@ body {
     text-align: right;
     margin-right: 10px;
     color: #80848e;
+    transition-duration: 0.4s;
+}
 
+.message >.time:hover {
+    color: white;
+    transition-duration: 0.4s;
 }
 
 .message > .username2 {
